@@ -1,7 +1,11 @@
+import java.util.Scanner;
+
 public class PositivoNegativo{
     public static void main(String[]args){
+        Scanner input = new Scanner(System.in);
 
-        int numero = 5;
+        System.out.println("Digite o numero: ");
+        int numero = input.nextInt();
 
         if(numero < 0){
             System.out.println("O numero é negativo! ");
