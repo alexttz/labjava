@@ -8,9 +8,9 @@ public class CalculaIdade {
         System.out.println("Digite a sua idade: ");
         int idade = teclado.nextInt();
 
-        if(idade > 18 && idade < 60){
+        if(idade >= 18 && idade =< 60){
             System.out.println("Você já é maior de idade! ");
-        }else if (idade > 60 ){
+        }else if (idade >= 60 ){
             System.out.println("Você é idoso! ");
         }else{
             System.out.println("Você é menor de idade! ");
