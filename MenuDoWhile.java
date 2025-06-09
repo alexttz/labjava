@@ -15,6 +15,17 @@ public class MenuDoWhile {
 
             opcao = teclado.nextInt();
 
+            if(opcao == 0){
+                System.out.println("Saindo do programa...");
+            } else if(opcao == 1){
+                System.out.println("Opção 1 selecionada!");
+            } else if(opcao == 2){
+                System.out.println("Opção 2 selecionada!");
+            } else if(opcao == 3){
+                System.out.println("Opção 3 selecionada!");
+            } else{
+                System.out.println("Opção inválida!");
+            }    
         } while(opcao != 0);
     }
 }
