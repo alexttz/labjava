@@ -1,7 +1,15 @@
 public class ex04 {
     public static void main(String[] args) {
-        for(int i = 1; i <=50; i++){
-            if (i > 1 && i % 2 == 1) {
+        for(int i = 2; i <=50; i++){
+            boolean isPrimo = true;
+
+            for (int j = 2; j <= i/2; j++) {
+                if (i % j == 0) {
+                    isPrimo = false;
+                    break;
+                }
+            }
+            if (isPrimo) {
                 System.out.println("O número " + i + " é primo");
             }
         }
