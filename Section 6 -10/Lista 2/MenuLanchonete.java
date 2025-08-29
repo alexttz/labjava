@@ -6,6 +6,8 @@ public class MenuLanchonete {
 
         Scanner teclado = new Scanner(System.in);
         int opcao;
+        double valorTotal = 0.0;
+        double preco = 0.0;
 
     do {
 
@@ -25,27 +27,41 @@ public class MenuLanchonete {
                 break;
             case 2:
                 System.out.println("Você escolheu Cachorro Quente");
+                preco = 24.50;
+                valorTotal += preco;
                 break;
             case 3:
                 System.out.println("Você escolheu X-Salada");
+                preco = 20.50;
+                valorTotal += preco;
                 break;
             case 4:
                 System.out.println("Você escolheu X-Bacon");
+                preco = 28.90;
+                valorTotal += preco;
                 break;
             case 5:
                 System.out.println("Você escolheu Bauru");
+                preco = 12.00;
+                valorTotal += preco;
                 break;
             case 6:
                 System.out.println("Você escolheu Refrigerante");
+                preco = 8.00;
+                valorTotal += preco;
                 break;
             case 7:
                 System.out.println("Você escolheu Suco de Laranja");
+                preco = 2.25;
+                valorTotal += preco;
                 break;
             default:
                 System.out.println("Opção inválida");
         }
 
     } while (opcao != 1);
+
+    System.out.println("Valor total a pagar: R$ " + valorTotal);
 
     }
 }
